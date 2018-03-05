@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="4dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.cmnd97.moneyvate.ProfileFragment">
+
+    <TextView
+        android:id="@+id/profile_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/task_creator_initializer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:onClick="setUpTaskCreator"
+        android:text="New Task" />
+
+    <LinearLayout
+        android:id="@+id/task_creator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:text="Create a new task" />
+
+        <AutoCompleteTextView
+            android:id="@+id/locView"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:completionThreshold="1"
+            android:gravity="center"
+            android:hint="Pick location name" />
+
+        <EditText
+            android:id="@+id/dateView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="Pick date" />
+
+        <EditText
+            android:id="@+id/timeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="Pick time" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="sendTaskForCreation"
+            android:text="Send" />
+
+        <TextView
+            android:id="@+id/task_creation_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="logOut"
+        android:text="Log out" />
+
+</LinearLayout>

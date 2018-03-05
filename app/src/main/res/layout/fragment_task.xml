@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cmnd97.moneyvate.TaskFragment">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:weightSum="10.2">
+
+        <TextView
+            android:id="@+id/task_id_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:text="Task ID"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_status_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.9"
+            android:gravity="center"
+            android:text="Status"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_deadline_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.9"
+            android:gravity="center"
+            android:text="Deadline"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/task_location_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="2.1"
+            android:gravity="center"
+            android:text="Location"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_directions_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:layout_weight="2.2"
+            android:gravity="center"
+            android:text="GPS"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/no_results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:gravity="center"
+        android:text="Nothing to show. Why don't you sign up for a task now?"
+        android:textSize="16sp"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/task_zone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+
+</LinearLayout>
