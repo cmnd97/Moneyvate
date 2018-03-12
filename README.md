@@ -1,6 +1,8 @@
 # Moneyvate
 An Android App which allows users to create location based tasks, which can be completed by scanning NFC tags at the respective places.
 
+![Screenshots](https://i.imgur.com/pa8CHUU.png)
+
 The app is currently a work in progress. 
 As the name suggests, this app is supposed to work with money, in order to motivate users into completing their tasks. This feature
 will be powered by paypal and will be added later. 
